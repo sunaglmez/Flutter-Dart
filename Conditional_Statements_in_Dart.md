@@ -97,3 +97,35 @@ void main() {
   }
 }
 ```
+## Short Form of `if`, `else`, `if else` (Ternary Operator)
+
+In Dart, the ternary operator (`? :`) provides a shorter way to write `if-else` statements.
+
+#### Example:
+
+```dart
+void main() {
+  int number1 = 5;
+  int number2 = 10;
+  int? number3;
+  // The '?' allows 'number3' to be nullable, meaning it can be assigned a null value.
+
+  // Using a normal if-else statement
+  if (number1 < number2) {
+    number3 = number2;
+  } else {
+    number3 = number1;
+  }
+  print(number3);  // Output will be 10
+
+  // Using a short ternary form
+  number1 < number2 ? number3 = number2 : number3 = number1;
+  print(number3);  // Output will be 10
+
+  // Another short form of ternary operation
+  number3 = number1 < number2 ? number2 : number1;
+  print(number3);  // Output will be 10
+
+  // All forms give the same result.
+}
+```
