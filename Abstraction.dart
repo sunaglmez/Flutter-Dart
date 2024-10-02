@@ -26,3 +26,10 @@ class Car extends Vehicle {
   }
 }
 
+void main() {
+  Car car = Car(); // We created an object from the Car class since it's a concrete class
+  car.start();     // Car started.
+  car.provideInfo(); // This is a vehicle.
+  car.stop();      // Car stopped.
+}
+
